@@ -8,10 +8,10 @@
     <script src="./assets/js/script.js"></script>
     <title>Paulo Santos - Portfólio</title>
 </head>
-<body class="background-primary">
-    <nav id="nav" class="align-items-center display-flex justify-content-between padding-default width-hundred">
-        <a class="color-primary font-size-thirty-six font-weight-bold" href="/">Portfólio</a>
-        <button class="button-toggle color-primary" onclick="menu_toggle()">
+<body>
+    <nav id="nav">
+        <a class="logo" href="/">Portfólio</a>
+        <button class="button-toggle" onclick="menu_toggle()">
             <svg
             width="24"
             height="24"
@@ -33,23 +33,23 @@
             />
             </svg>
         </button>
-        <ul class="menu display-flex">
-            <li class="menu-item"><a class="color-primary font-size-eighteen" href="#about-me" onclick="menu_toggle()">Sobre mim</a></li>
-            <li class="menu-item"><a class="color-primary font-size-eighteen" href="#projects" onclick="menu_toggle()">Projetos</a></li>
-            <li class="menu-item"><a class="color-primary font-size-eighteen" href="#services" onclick="menu_toggle()">Serviços</a></li>
-            <li class="menu-item"><a class="color-primary font-size-eighteen" href="#my-skills" onclick="menu_toggle()">Minhas skills</a></li>
+        <ul class="menu">
+            <li class="menu-item"><a class="menu-link" href="#about-me" onclick="menu_toggle()">Sobre mim</a></li>
+            <li class="menu-item"><a class="menu-link" href="#projects" onclick="menu_toggle()">Projetos</a></li>
+            <li class="menu-item"><a class="menu-link" href="#services" onclick="menu_toggle()">Serviços</a></li>
+            <li class="menu-item"><a class="menu-link" href="#my-skills" onclick="menu_toggle()">Minhas skills</a></li>
         </ul>
     </nav>
-    <header id="header" class="align-items-center display-flex justify-content-between padding-default width-hundred">
-        <div class="display-flex flex-direction-column">
-            <h1 class="color-primary font-size-thirty-two margin-bottom-twenty text-align-center">Olá, eu sou o Paulo Santos</h1>
-            <p class="color-secondary font-size-eighteen font-weight-medium margin-bottom-thirty text-align-center">Estudante de desenvolvimento de software na Blue.</p>
-            <div class="display-flex justify-content-center">
-                <button class="background-secondary button font-size-fourteen font-weight-medium">
-                    <a class="color-primary" href="/curriculo.pdf" download="curriculo.pdf" type="application/pdf">Currículo</a>
+    <header id="header">
+        <div class="infos">
+            <h1 class="presentation">Olá, eu sou o Paulo Santos</h1>
+            <p class="work">Estudante de desenvolvimento de software na Blue.</p>
+            <div class="buttons">
+                <button class="button-cv">
+                    <a class="button-cv-link" href="/curriculo.pdf" download="curriculo.pdf" type="application/pdf">Currículo</a>
                 </button>
-                <button class="background-primary button font-size-fourteen font-weight-medium border">
-                    <a class="color-primary" href="mailto:paulomttsnts@hotmail.com">Entrar em contato</a>
+                <button class="button-email">
+                    <a class="button-email-link" href="mailto:paulomttsnts@hotmail.com">Entrar em contato</a>
                 </button>
             </div>
         </div>
@@ -102,96 +102,96 @@
         </defs>
         </svg>            
     </header>
-    <section id="about-me" class="display-flex flex-direction-column padding-default text-align-center width-hundred">
-        <h2 class="margin-bottom-thirty secondary-title">Sobre mim</h2>
-        <p class="color-secondary font-size-eighteen margin-bottom-eighty">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
-        <ul class="contacts-list display-flex justify-content-evenly">
-            <li class="align-items-center display-flex flex-direction-column">
-                <div class="align-items-center background-third contacts-icons display-flex justify-content-center margin-bottom-twenty">
+    <section id="about-me">
+        <h2 class="about-me-title">Sobre mim</h2>
+        <p class="about-me-text">Em breve colocarei um texto sobre mim.</p>
+        <ul class="contacts-list">
+            <li class="contacts-list">
+                <div class="contacts-icons">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.33333 5.33334H26.6667C28.1333 5.33334 29.3333 6.53334 29.3333 8.00001V24C29.3333 25.4667 28.1333 26.6667 26.6667 26.6667H5.33333C3.86666 26.6667 2.66666 25.4667 2.66666 24V8.00001C2.66666 6.53334 3.86666 5.33334 5.33333 5.33334Z" stroke="#580aff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M29.3333 8L16 17.3333L2.66666 8" stroke="#580aff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <p class="color-primary font-size-eighteen font-weight-bold">E-mail</p>
-                <p><a class="color-secondary font-size-sixteen" href="mailto:paulomttsnts@hotmail.com" target="_blank">paulomttsnts@hotmail.com</a></p>
+                <p class="contacts-email-text">E-mail</p>
+                <p><a class="contacts-email" href="mailto:paulomttsnts@hotmail.com" target="_blank">paulomttsnts@hotmail.com</a></p>
             </li>
-            <li class="align-items-center display-flex flex-direction-column">
-                <div class="contacts-icons background-third display-flex justify-content-center align-items-center margin-bottom-twenty">
+            <li class="contacts-list">
+                <div class="contacts-icons">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22.6667 2.66666H9.33333C5.65143 2.66666 2.66666 5.65142 2.66666 9.33332V22.6667C2.66666 26.3486 5.65143 29.3333 9.33333 29.3333H22.6667C26.3486 29.3333 29.3333 26.3486 29.3333 22.6667V9.33332C29.3333 5.65142 26.3486 2.66666 22.6667 2.66666Z" stroke="#580aff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M21.3333 15.16C21.4979 16.2697 21.3083 17.403 20.7917 18.3987C20.275 19.3944 19.4575 20.2019 18.4555 20.7062C17.4535 21.2106 16.3179 21.3861 15.2104 21.2079C14.1028 21.0297 13.0797 20.5068 12.2864 19.7136C11.4932 18.9203 10.9703 17.8972 10.7921 16.7896C10.6139 15.6821 10.7894 14.5465 11.2938 13.5445C11.7981 12.5425 12.6056 11.725 13.6013 11.2083C14.597 10.6917 15.7303 10.5021 16.84 10.6667C17.9719 10.8345 19.0198 11.362 19.8289 12.1711C20.638 12.9802 21.1655 14.0281 21.3333 15.16Z" stroke="#580aff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M23.3333 8.66666H23.3467" stroke="#580aff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>                            
                 </div>
-                <p class="color-primary font-size-eighteen font-weight-bold">Instagram</p>
-                <p><a class="color-secondary font-size-sixteen" href="https://www.instagram.com/paulomttsnts/" target="_blank">@paulomttsnts</a></p>
+                <p class="contacts-instagram-text">Instagram</p>
+                <p><a class="contacts-instagram" href="https://www.instagram.com/paulomttsnts/" target="_blank">@paulomttsnts</a></p>
             </li>
         </ul>
     </section>
-    <section id="projects" class="display-flex flex-direction-column padding-default text-align-center width-hundred">
-        <h2 class="margin-bottom-thirty secondary-title">Projetos</h2>
-        <div class="display-flex justify-content-center projects width-hundred">
-            <div class="background-third border display-flex flex-direction-column project">
-                <div class="background-primary border preview"></div>
-                <h4 class="color-primary font-size-eighteen font-weight-medium">Título do projeto</h4>
-                <p class="color-secondary font-size-fourteen">Tecnologias: HTML, CSS e JS.</p>
+    <section id="projects">
+        <h2 class="projects-title">Projetos</h2>
+        <div class="projects">
+            <div class="project">
+                <div class="preview"></div>
+                <h4 class="preview-title">Título do projeto</h4>
+                <p class="preview-techs">Tecnologias: HTML, CSS e JS.</p>
             </div>
-            <div class="background-third border display-flex flex-direction-column project">
-                <div class="background-primary border preview"></div>
-                <h4 class="color-primary font-size-eighteen font-weight-medium">Título do projeto</h4>
-                <p class="color-secondary font-size-fourteen">Tecnologias: HTML, CSS e JS.</p>
+            <div class="project">
+                <div class="preview"></div>
+                <h4 class="preview-title">Título do projeto</h4>
+                <p class="preview-techs">Tecnologias: HTML, CSS e JS.</p>
             </div>
-            <div class="background-third border display-flex flex-direction-column project">
-                <div class="background-primary border preview"></div>
-                <h4 class="color-primary font-size-eighteen font-weight-medium">Título do projeto</h4>
-                <p class="color-secondary font-size-fourteen">Tecnologias: HTML, CSS e JS.</p>
+            <div class="project">
+                <div class="preview"></div>
+                <h4 class="preview-title">Título do projeto</h4>
+                <p class="preview-techs">Tecnologias: HTML, CSS e JS.</p>
             </div>
-            <div class="background-third border display-flex flex-direction-column project">
-                <div class="background-primary border preview"></div>
-                <h4 class="color-primary font-size-eighteen font-weight-medium">Título do projeto</h4>
-                <p class="color-secondary font-size-fourteen">Tecnologias: HTML, CSS e JS.</p>
+            <div class="project">
+                <div class="preview"></div>
+                <h4 class="preview-title">Título do projeto</h4>
+                <p class="preview-techs">Tecnologias: HTML, CSS e JS.</p>
             </div>
-            <div class="background-third border display-flex flex-direction-column project">
-                <div class="background-primary border preview"></div>
-                <h4 class="color-primary font-size-eighteen font-weight-medium">Título do projeto</h4>
-                <p class="color-secondary font-size-fourteen">Tecnologias: HTML, CSS e JS.</p>
+            <div class="project">
+                <div class="preview"></div>
+                <h4 class="preview-title">Título do projeto</h4>
+                <p class="preview-techs">Tecnologias: HTML, CSS e JS.</p>
             </div>
-            <div class="background-third border display-flex flex-direction-column project">
-                <div class="background-primary border preview"></div>
-                <h4 class="color-primary font-size-eighteen font-weight-medium">Título do projeto</h4>
-                <p class="color-secondary font-size-fourteen">Tecnologias: HTML, CSS e JS.</p>
+            <div class="project">
+                <div class="preview"></div>
+                <h4 class="preview-title">Título do projeto</h4>
+                <p class="preview-techs">Tecnologias: HTML, CSS e JS.</p>
             </div>
         </div>
     </section>
-    <section id="services" class="display-flex flex-direction-column justify-content-center padding-default text-align-center width-hundred">
-        <h2 class="margin-bottom-thirty secondary-title">Serviços</h2>
-        <div class="display-flex justify-content-center services width-hundred">
-            <div class="background-third border display-flex flex-direction-column justify-content-between service">
+    <section id="services">
+        <h2 class="services-title">Serviços</h2>
+        <div class="services">
+            <div class="service">
                 <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M37.3333 42L51.3333 28L37.3333 14" stroke="#580aff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M18.6667 14L4.66675 28L18.6667 42" stroke="#580aff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>                        
-                <p class="color-secondary font-size-thirty-two font-weight-medium">Criação de sites</p>
+                <p class="service-name">Criação de sites</p>
             </div>
-            <div class="background-third border display-flex flex-direction-column justify-content-between service">
+            <div class="service">
                 <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M39.6667 4.66663H16.3334C13.7561 4.66663 11.6667 6.75596 11.6667 9.33329V46.6666C11.6667 49.244 13.7561 51.3333 16.3334 51.3333H39.6667C42.2441 51.3333 44.3334 49.244 44.3334 46.6666V9.33329C44.3334 6.75596 42.2441 4.66663 39.6667 4.66663Z" stroke="#580aff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M28 42H28.0233" stroke="#580aff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>                        
-                <p class="color-secondary font-size-thirty-two font-weight-medium">Sites responsivos</p>
+                <p class="service-name">Sites responsivos</p>
             </div>
         </div>
     </section>
-    <section id="my-skills" class="display-flex flex-direction-column justify-content-center padding-default text-align-center width-hundred">
-        <h2 class="margin-bottom-thirty secondary-title">Minhas skills</h2>
-        <div class="display-flex justify-content-center margin-bottom-eighty skills width-hundred">
-            <div class="align-items-center background-third border display-flex justify-content-center skill">
+    <section id="my-skills">
+        <h2 class="my-skills-title">Minhas skills</h2>
+        <div class="skills">
+            <div class="skill">
                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.72662 0L11.1466 72L39.9566 80L68.8416 71.99L75.2716 0H4.73162H4.72662ZM61.2966 23.55H27.5066L28.3116 32.595H60.4966L58.0716 59.705L39.9566 64.725L21.8666 59.705L20.6316 45.835H29.4966L30.1266 52.885L39.9616 55.535L39.9816 55.53L49.8216 52.875L50.8416 41.425H20.2366L17.8566 14.72H62.0916L61.3016 23.55H61.2966Z" fill="#580aff"/>
                 </svg>                        
             </div>
-            <div class="align-items-center background-third border display-flex justify-content-center skill">
+            <div class="skill">
                 <svg width="70" height="80" viewBox="0 0 70 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2_1615)">
                     <path d="M64.5533 71.41L70.93 0H0L0.0833333 0.926667L6.36667 71.42L6.42 72.0067L35.1967 80H35.65L64.4933 72L64.5467 71.4133L64.5533 71.41ZM35.5267 15.5967H56.1367L55.5167 22.7967L35.1833 31.8367L35.5233 33.4633H54.6033L52.4067 58.6333L35.4533 63.3333L18.5067 58.64L17.44 46.5867H24.4167L24.9767 52.6967L25.03 53.29L35.3133 56.0233H35.7567L45.9267 53.1967L45.9767 52.6067L46.9367 41.32L47.0133 40.4H16.8567L16.2233 33.1567L37.2533 24.1533L36.92 22.52H15.32L14.7033 15.5867H35.5033L35.5267 15.5967Z" fill="#580aff"/>
@@ -203,15 +203,15 @@
                     </defs>
                 </svg>                        
             </div>
-            <div class="align-items-center background-third border display-flex justify-content-center skill">
+            <div class="skill">
                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H80V80H0V0ZM61.1567 67.0667C57.4467 67.0667 55.35 65.1333 53.74 62.5L47.63 66.05C49.8367 70.41 54.3467 73.7367 61.33 73.7367C68.47 73.7367 73.7867 70.03 73.7867 63.26C73.7867 56.9833 70.18 54.1933 63.7933 51.45L61.9133 50.6467C58.6867 49.2467 57.29 48.3367 57.29 46.08C57.29 44.2567 58.69 42.86 60.89 42.86C63.0467 42.86 64.4367 43.77 65.7267 46.08L71.58 42.3233C69.1033 37.9667 65.67 36.3033 60.89 36.3033C54.1767 36.3033 49.88 40.5967 49.88 46.2367C49.88 52.3533 53.48 55.25 58.9067 57.56L60.7867 58.3667C64.2167 59.8667 66.26 60.78 66.26 63.3567C66.26 65.51 64.27 67.0667 61.1567 67.0667ZM32.0233 67.0167C29.44 67.0167 28.3633 65.25 27.1833 63.15L21.0633 66.8567C22.8367 70.61 26.3233 73.7233 32.34 73.7233C39.0033 73.7233 43.5667 70.18 43.5667 62.3967V36.73H36.05V62.2967C36.05 66.0533 34.49 67.0167 32.02 67.0167H32.0233Z" fill="#580aff"/>
                 </svg>                        
             </div>
         </div>
     </section>
-    <footer id="footer" class="align-items-center background-third display-flex justify-content-center width-hundred">
-        <p class="color-primary font-size-sixteen font-weight-bold">Orgulhosamente feito por <span class="color-fourth">Paulo Santos</p></span>
+    <footer id="footer">
+        <p class="footer-copyright">Orgulhosamente feito por <span class="footer-name">Paulo Santos</span></p>
     </footer>
 </body>
 </html>
